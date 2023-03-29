@@ -36,8 +36,8 @@ Mobile
 
 ### Links
 
-- Solution URL: [Solution code on Github](https://github.com/mindful108/frontendmentor-product-preview-card-component)
-- Live Site URL: [Live solution hosted on Github](https://your-live-site-url.com)
+- Solution URL: [Solution code on Github](https://github.com/mindful108/frontendmentor-product-preview-card-component.git)
+- Live Site URL: [Live solution hosted on Github](https://mindful108.github.io/frontendmentor-product-preview-card-component/)
 
 ## My process
 
