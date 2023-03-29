@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --green: hsl(158, 36%, 37%);
+  --greenDark: hsl(156, 42%, 18%);
+  --cream: hsl(30, 38%, 92%);
+  --darkBlue: hsl(212, 21%, 14%);
+  --grayBlue: hsl(228, 12%, 48%);
+  --contentMaxWidth: 390px;
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  opacity: 0.5;
+  align-self: center;
+  font-size: 13px;
+  text-align: center;
+  margin: 3rem 0 2rem;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--cream);
+  display: flex;
+  color: var(--grayBlue);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.7rem 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.card-image img {
+  display: block;
+  max-width: 100%;
+}
+
+.card-content {
+  padding: 25px;
+}
+.subhead {
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0 0 .7rem;
+}
+
+h3 {
+  font-family: 'Fraunces', serif;
+  color: var(--darkBlue);
+  font-size: 32px;
+  line-height: 1;
+  max-width: var(--contentMaxWidth);
+}
+
+p {
+  font-size: 14px;
+  color: var(--grayBlue);
+  line-height: 1.6;
+  margin: 1.25rem 0 1.25rem;
+  max-width: var(--contentMaxWidth);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center; 
+  gap: 1rem;
+  font-size: 12px;
+}
+
+.price-original {
+  text-decoration: line-through;
+}
+
+.price-sale {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  color: var(--green);
+}
+
+.btn {
+  background-color: var(--green);
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75em;
+  border-radius: 8px;
+  margin-top: 1.25rem;
+  height: 50px;
+  transition: background-color .25s ease;
+}
+.btn:hover {
+  background-color: var(--greenDark);
+}
+
+@media (min-width: 615px) {
+  body {
+    height: 100vh;
+  }
+  .card {
+    display: flex;
+    height: 450px;
+    width: 600px;
+  }
+  .card-image {
+    max-width: 300px;
+  }
+  .card-content {
+    padding: 1.75rem;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
