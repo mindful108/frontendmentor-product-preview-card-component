@@ -118,7 +118,7 @@ ul {
 
 @media (min-width: 615px) {
   body {
-    height: 100vh;
+    /* height: 100vh; */
   }
   .card {
     display: flex;
@@ -134,5 +134,11 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+}
+
+@media (min-height: 930px) {
+  body {
+    height: 100vh;
   }
 }
